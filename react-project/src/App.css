@@ -1,8 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body {
     font-family: "Poppins", sans-serif;
 }
 
 nav {
     z-index: 10001 !important;
+}
+
+.gradientBg {
+    background: linear-gradient(99deg, #ee9ae5 0%, #5961f9 100%);
+}
+
+.btnPrimary {
+    @apply py-3 px-8 bg-secondary font-semibold text-white rounded transition-all duration-300;
+}
+
+.btnPrimary:hover {
+    background-color: #010851;
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.mobile-link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#9A7AF1, #9A7AF1)
+}
+
+.mobile-link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff)
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%
+}
+
+.mobile-link-underline:hover {
+    background-size: 25% 3px;
+    background-position: 0 100%
 }
